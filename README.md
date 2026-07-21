@@ -5,6 +5,7 @@ Welcome to my research blog. I'm TitleOS, a cybersecurity & devops engineer focu
 
 ## Research & Writeups
 
+* *NEW* [Exploring the Star(link)s](exploring-the-star(link)s.md)
 * [xboxdemo.com: Taking Over Every Kiosk Account](xboxdemo-com-Taking-Over-Every-Kiosk-Account.md)
 * [Examining the Keys to the Kingdom: Xbox One Devkits and Capability Certificates](Examining-the-Keys-to-the-Kingdom-Xbox-One-Devkits-and-Capability-Certificates.md)
 * [Retail or Godbox? Xbox One and Series XDK Buying Guide](Retail-or-Godbox-Xbox-One-Series-XDK-Buying-Guide.md)
