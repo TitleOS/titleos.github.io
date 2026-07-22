@@ -15,7 +15,7 @@ With the strings not revealing any low hanging fruit, I decided to dispatch Clau
 ![starlink-dishy-ota-flow](images/starlink-dish-ota-flow.png)
 
 ## Extracting the firmware file: sw_update_catson.sxv
-Noting that in some states, the flow will proceed with an offline sideloading, I located two firmware files, sw_update_catson.sxv and sw_update_catapult.sxv in the assets folder, for non-aviation and aviation dishes respectively. Binwalking `sw_update_catson.sxv` revealed a RomFS filesystem, named `sxverity` with a total size of 45.8mb. Extracting the RomFS file system resulted in the a folder structure featuring `bin`, `dat`, and `revision_info` folders. `revision_info`'s sole contents is a text file named `version_info.txt` with the following contents (This research was conducted on 07/21/2026): 
+Noting that in some states, the flow will proceed with an offline sideloading, I located two firmware files, sw_update_catson.sxv and sw_update_catapult.sxv in the assets folder, with `catson` and `catapult` referring to different CPUs used in hardware. `Catson` being the older chip, used up to `rev4_prodX`, while `Catapult`, a more modern chip, powers the mini, rev5, and other devices. Binwalking `sw_update_catson.sxv` revealed a RomFS filesystem, named `sxverity` with a total size of 45.8mb. Extracting the RomFS file system resulted in the a folder structure featuring `bin`, `dat`, and `revision_info` folders. `revision_info`'s sole contents is a text file named `version_info.txt` with the following contents (This research was conducted on 07/21/2026): 
 ```
 Constellation Branch, ssh://git@stash:7999/sat/satcode.git
 Constellation Version, d2db9be25af5f37f9b642e7ac7ad1b2833efac3a
